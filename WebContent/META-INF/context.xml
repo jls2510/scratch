@@ -1,0 +1,15 @@
+<Context path="/HIP_Star" debug="1" reloadable="true"
+	crossContext="true" clearReferencesStopTimerThreads="true">
+
+	<Logger className="org.apache.catalina.logger.FileLogger"
+		prefix="localhost_heavens_log." suffix=".txt" timestamp="true" />
+
+	<Resource name="jdbc/heavens" auth="Container" type="javax.sql.DataSource"
+		username="jls" password="twisted23" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/heavens?autoReconnect=true"
+		maxActive="100" maxIdle="30" maxWait="10000" removeAbandoned="true"
+		removeAbandonedTimeout="300" logAbandoned="true" validationQuery="SELECT 1"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory" />
+
+</Context>
+

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>WWW Scratch</title>
+<style type="text/css">
+.hidden {
+	display: none;
+}
+
+.show {
+	display: inline !important;
+}
+</style>
+
+
+<script>
+	function factorial(num) {
+		if (num <= 1) {
+			return 1;
+		} else {
+			return num * factorial(num - 1);
+		}
+	}
+
+	// keep track of recursive binary search iterations
+	let searchCount = 0;
+
+	function binarySearch(array, target) {
+
+		// check to make sure the value isn't greater than the greatest value in the array
+		if (target > array[array.length - 1]) {
+			return -1;
+		}
+
+		let lowerBound = 0;
+		let upperBound = array.length;
+		return doBinarySearch(array, target, lowerBound, upperBound);
+
+	} // end binarySearch()
+
+	function doBinarySearch(array, target, lowerBound, upperBound) {
+		searchCount++;
+		if (lowerBound < upperBound && searchCount < 100) {
+
+			let medianIndex = Math.floor(lowerBound
+					+ ((upperBound - lowerBound) / 2));
+			let medianValue = array[medianIndex];
+
+			if (medianValue === target) {
+				return medianIndex;
+			} else if (medianValue < target) {
+				lowerBound = medianIndex;
+			} else {
+				upperBound = medianIndex;
+			}
+		} else {
+			return -1;
+		}
+
+		return doBinarySearch(array, target, lowerBound, upperBound);
+
+	} // end doBinarySearch()
+</script>
+
+</head>
+<body>
+
+	<h1>sratch</h1>
+
+	<script>
+		document.write("factorial of 6 = " + factorial(6) + "<br>");
+
+		let searchArrayLength = 10000;
+		let searchableArray = new Array(searchArrayLength);
+		for (let index = 0; index < searchArrayLength; index++) {
+			searchableArray[index] = Math.floor(Math.random()
+					* searchArrayLength);
+		}
+		searchableArray.sort(function(x, y) {
+			return x - y
+		});
+
+		let target = Math.floor(Math.random() * 10000);
+		document.write("binary search results: index of " + target + " = "
+				+ binarySearch(searchableArray, target) + "<br />");
+		document.write("binary search iteration count = " + searchCount
+				+ "<br />");
+	</script>
+
+	<br>
+	<br>
+
+	<button id="squid" onClick="squidIt()">Click for Squid</button>
+	<br />
+	<script>
+		function squidIt() {
+			alert("Squid!");
+		}
+	</script>
+
+	<br />
+	<input type="text" id="randInput"
+		onChange="var dataEntered=document.getElementById('randInput').value; alert(dataEntered);">
+	<br />
+
+	<input type="text" id="charInput">
+	<br />
+	<p id="keyData">Key Data Here</p>
+	<br />
+	<script>
+	function getChar(event) {
+		if (event.which == null) {
+			return String.fromCharCode(event.keyCode); // IE
+		}
+		else if (event.which != 0 && event.charCode != 0) {
+			return String.fromCharCode(event.which); // other browsers
+		}
+		else {
+			return null; // special key clicked
+		}		
+	} // end getChar()
+	
+	document.getElementById("charInput").onkeypress = function(event) {
+		var char = getChar(event || window.event);
+		if (!char) { // special key clicked
+			return false;
+		}
+		document.getElementById("keyData").innerHTML = char + " was clicked.";
+		return true;
+	}
+	
+	</script>
+
+	<br /> Mouse X:
+	<input type="text" id="mouseX">
+	<br /> Mouse Y:
+	<input type="text" id="mouseY">
+	<br />
+	<script>
+		document.body.onmousemove = function(e) {
+			e = e || window.event;
+
+			// pageX, pageY: mouse position relative to html doc
+			var pageX = e.pageX;
+			var pageY = e.pageY;
+			if (pageX === undefined) {
+				// clientX, clientY: mouse position relative to browser viewport
+				// scrollLeft, scrollTop: pixel an element is scrolled from left or top
+				pageX = e.clientX + document.body.scrollLeft
+						+ document.documentElement.scrollLeft;
+				pageY = e.clientY + document.body.scrollTop
+						+ document.documentElement.scrollTop;
+			}
+			document.getElementById("mouseX").value = pageX;
+			document.getElementById("mouseY").value = pageY;
+		}
+	</script>
+
+	<br />
+	<button id="hideMe">Click To Hide Me</button>
+	<br />
+	<button id="showHer" class="hidden">Click To Show Her</button>
+	<br />
+
+	<script>
+
+	// Make image invisible on click
+	document.getElementById('hideMe').onclick = function(event) {
+  document.getElementById('hideMe').className = "hidden";
+  document.getElementById('showHer').className = "show";
+}
+
+	// Make image visible on click
+	document.getElementById('showHer').onclick = function(event) {
+  document.getElementById('hideMe').className = "show";
+  document.getElementById('showHer').className = "hidden";
+}
+
+</script>
+
+
+
+</body>
+
+</html>

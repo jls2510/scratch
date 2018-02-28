@@ -1,4 +1,4 @@
-package main.java;
+package main.java.com.ping23;
 
 public class BinarySearchExercise {
 	
