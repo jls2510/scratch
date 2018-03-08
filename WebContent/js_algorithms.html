@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		function factorial(num) {
+			if (num <= 1) {
+				return 1;
+			} else {
+				return num * factorial(num - 1);
+			}
+		}
+
+		// keep track of recursive binary search iterations
+		let searchCount = 0;
+
+		function binarySearch(array, target) {
+
+			// check to make sure the value isn't greater than the greatest value in the array
+			if (target > array[array.length - 1]) {
+				return -1;
+			}
+
+			let lowerBound = 0;
+			let upperBound = array.length;
+			return doBinarySearch(array, target, lowerBound, upperBound);
+
+		} // end binarySearch()
+
+		function doBinarySearch(array, target, lowerBound, upperBound) {
+			searchCount++;
+			if (lowerBound < upperBound && searchCount < 100) {
+
+				let medianIndex = Math.floor(lowerBound
+						+ ((upperBound - lowerBound) / 2));
+				let medianValue = array[medianIndex];
+
+				if (medianValue === target) {
+					return medianIndex;
+				} else if (medianValue < target) {
+					lowerBound = medianIndex;
+				} else {
+					upperBound = medianIndex;
+				}
+			} else {
+				return -1;
+			}
+
+			return doBinarySearch(array, target, lowerBound, upperBound);
+
+		} // end doBinarySearch()
+	</script>
+
+	<script>
+		document.write("factorial of 6 = " + factorial(6) + "<br>");
+
+		let searchArrayLength = 10000;
+		let searchableArray = new Array(searchArrayLength);
+		for (let index = 0; index < searchArrayLength; index++) {
+			searchableArray[index] = Math.floor(Math.random()
+					* searchArrayLength);
+		}
+		searchableArray.sort(function(x, y) {
+			return x - y
+		});
+
+		let target = Math.floor(Math.random() * 10000);
+		document.write("binary search results: index of " + target + " = "
+				+ binarySearch(searchableArray, target) + "<br />");
+		document.write("binary search iteration count = " + searchCount
+				+ "<br />");
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script language="javascript">
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  console.log('<head>window - DOMContentLoaded - capture'); // 1st
+}, true);
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('<head>document - DOMContentLoaded - capture'); // 2nd
+}, true);
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('<head>document - DOMContentLoaded - bubble'); // 2nd
+});
+window.addEventListener('DOMContentLoaded', function() {
+  console.log('<head>window - DOMContentLoaded - bubble'); // 3rd
+});
+
+window.addEventListener('load', function() {
+  console.log('<head>window - load - capture'); // 4th
+}, true);
+document.addEventListener('load', function(e) {
+  /* Filter out load events not related to the document */
+  if(['style','script'].indexOf(e.target.tagName.toLowerCase()) < 0)
+    console.log('<head>document - load - capture'); // DOES NOT HAPPEN
+}, true);
+document.addEventListener('load', function() {
+  console.log('<head>document - load - bubble'); // DOES NOT HAPPEN
+});
+window.addEventListener('load', function() {
+  console.log('<head>window - load - bubble'); // 4th
+});
+
+window.onload = function() {
+  console.log('<head>window - onload'); // 4th
+};
+document.onload = function() {
+  console.log('<head>document - onload'); // DOES NOT HAPPEN
+};
+
+</script>
+
+</head>
+<body>
+
+<script language="javascript">
+
+
+window.addEventListener('DOMContentLoaded', function() {
+  console.log('<body>window - DOMContentLoaded - capture'); // 1st
+}, true);
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('<body>document - DOMContentLoaded - capture'); // 2nd
+}, true);
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('<body>document - DOMContentLoaded - bubble'); // 2nd
+});
+window.addEventListener('DOMContentLoaded', function() {
+  console.log('<body>window - DOMContentLoaded - bubble'); // 3rd
+});
+
+window.addEventListener('load', function() {
+  console.log('<body>window - load - capture'); // 4th
+}, true);
+document.addEventListener('load', function(e) {
+  /* Filter out load events not related to the document */
+  if(['style','script'].indexOf(e.target.tagName.toLowerCase()) < 0)
+    console.log('<body>document - load - capture'); // DOES NOT HAPPEN
+}, true);
+document.addEventListener('load', function() {
+  console.log('<body>document - load - bubble'); // DOES NOT HAPPEN
+});
+window.addEventListener('load', function() {
+  console.log('<body>window - load - bubble'); // 4th
+});
+
+window.onload = function() {
+  console.log('<body>window - onload'); // 4th
+};
+document.onload = function() {
+  console.log('<body>document - onload'); // DOES NOT HAPPEN
+};
+
+</script>
+
+<h1>See console for javascript document loading sequence.</h1>
+
+</body>
+</html>

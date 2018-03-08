@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="resources.js"></script>
+</head>
+<body>
+
+	<p class="twin_peaks"></p>
+
+	<script>
+		// listA --------------------------------------------------
+		var listA = document.createElement("ol");
+		listA.setAttribute("id", "listA");
+		for (var intValue = 100; intValue < 103; intValue++) {
+			var stringToAppend = "listA(" + intValue + ") = "
+					+ parseInt(intValue);
+			var elementToAppend = document.createElement("li");
+			elementToAppend.innerHTML = stringToAppend;
+			listA.appendChild(elementToAppend);
+		}
+		document.body.appendChild(listA);
+
+		//reducer() exploration ------------------------------------
+		var reducerSum = document.createElement("p");
+		reducerSum.setAttribute("id", "reducerSum");
+		document.body.appendChild(reducerSum);
+
+		var directSum = document.createElement("p");
+		directSum.setAttribute("id", "directSum");
+		document.body.appendChild(directSum);
+
+		var array = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ];
+		var reducer = function(currentValue, newValue) {
+			return currentValue + newValue;
+		}
+		var reducerSumValue = array.reduce(reducer);
+		var directSumValue = 0;
+		for ( var x in array) {
+			directSumValue += parseInt(x);
+		}
+
+		document.getElementById("reducerSum").innerHTML = "reducerSum = "
+				+ reducerSumValue;
+		document.getElementById("directSum").innerHTML = "directSum = "
+				+ directSumValue;
+
+		var paragraph1 = document.createElement("p");
+		paragraph1.innerHTML = "Here is some text.";
+		//var list1 = 
+
+
+	</script>
+	
+	<p class="twin_peaks">Nevermore</p>
+	
+	<script>
+		var twin_peaks = document.querySelectorAll(".twin_peaks")
+		for (var inx = 0; inx < twin_peaks.length; inx++) {
+			twin_peaks[inx].innerHTML = "Who killed Laura Palmer?";
+		}
+	</script>
+	
+	
+	<script>
+	</script>
+
+</body>
+</html>

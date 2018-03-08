@@ -11,86 +11,74 @@
 .show {
 	display: inline !important;
 }
+
+.logo_image {
+	height: 100px;
+	width: 100px;
+}
 </style>
 
 
-<script>
-	function factorial(num) {
-		if (num <= 1) {
-			return 1;
-		} else {
-			return num * factorial(num - 1);
-		}
-	}
-
-	// keep track of recursive binary search iterations
-	let searchCount = 0;
-
-	function binarySearch(array, target) {
-
-		// check to make sure the value isn't greater than the greatest value in the array
-		if (target > array[array.length - 1]) {
-			return -1;
-		}
-
-		let lowerBound = 0;
-		let upperBound = array.length;
-		return doBinarySearch(array, target, lowerBound, upperBound);
-
-	} // end binarySearch()
-
-	function doBinarySearch(array, target, lowerBound, upperBound) {
-		searchCount++;
-		if (lowerBound < upperBound && searchCount < 100) {
-
-			let medianIndex = Math.floor(lowerBound
-					+ ((upperBound - lowerBound) / 2));
-			let medianValue = array[medianIndex];
-
-			if (medianValue === target) {
-				return medianIndex;
-			} else if (medianValue < target) {
-				lowerBound = medianIndex;
-			} else {
-				upperBound = medianIndex;
-			}
-		} else {
-			return -1;
-		}
-
-		return doBinarySearch(array, target, lowerBound, upperBound);
-
-	} // end doBinarySearch()
-</script>
 
 </head>
 <body>
 
-	<h1>sratch</h1>
+	<h1>scratch</h1>
+
+	<img id="logo" class="logo_image" src="images/waves.png" />
+	<br />
+	<br />
+	<button id="logo_button">Flip Image</button>
+	<br />
+	<br />
 
 	<script>
-		document.write("factorial of 6 = " + factorial(6) + "<br>");
-
-		let searchArrayLength = 10000;
-		let searchableArray = new Array(searchArrayLength);
-		for (let index = 0; index < searchArrayLength; index++) {
-			searchableArray[index] = Math.floor(Math.random()
-					* searchArrayLength);
+		document.getElementById("logo_button").onclick = function(event) {
+			//alert("hostname = " + window.location.hostname);
+			var origin = window.location.origin;
+			var normalImage = origin + "/images/waves.png";
+			var mirroredImage = origin + "/images/waves_mirrored.png"
+			
+			document.getElementById("logo").src = 
+				(document.getElementById("logo").src == normalImage) ? mirroredImage : normalImage;
+				
 		}
-		searchableArray.sort(function(x, y) {
-			return x - y
-		});
-
-		let target = Math.floor(Math.random() * 10000);
-		document.write("binary search results: index of " + target + " = "
-				+ binarySearch(searchableArray, target) + "<br />");
-		document.write("binary search iteration count = " + searchCount
-				+ "<br />");
 	</script>
 
-	<br>
-	<br>
+<script>
 
+// lorem ipsum --------------------------------------------------------------
+var loremIpsum = document.createElement("p");
+loremIpsum.setAttribute("id", "lorem_ipsum");
+loremIpsum.innerHTML = "Lorem Ipsum";
+document.body.appendChild(loremIpsum);
+
+// myButton ----------------------------------------------------------------
+var myButton = document.createElement("button");
+myButton.setAttribute("id", "myButton");
+myButton.innerHTML = "My Button";
+document.body.appendChild(myButton);
+
+var handleClick = function(event) {
+	// ajax ---------------------------------------------------------------
+	var request = new XMLHttpRequest();
+	request.onload = function(event) {
+		console.log(event);
+		//document.getElementById("xyz").innerHTML = event.target.response;
+		document.getElementById("lorem_ipsum").innerHTML = this.responseText;
+	}
+	request.open("get", "random.html", true);
+	request.send();
+}
+
+myButton.addEventListener("click", handleClick);
+
+</script>
+
+
+
+	<br />
+	<br />
 	<button id="squid" onClick="squidIt()">Click for Squid</button>
 	<br />
 	<script>
@@ -103,10 +91,10 @@
 	<input type="text" id="randInput"
 		onChange="var dataEntered=document.getElementById('randInput').value; alert(dataEntered);">
 	<br />
-
+	<br /> charInput:
 	<input type="text" id="charInput">
-	<br />
-	<p id="keyData">Key Data Here</p>
+	<br /> keyData >>
+	<span id="keyData">Key Data Here</span>
 	<br />
 	<script>
 	function getChar(event) {
@@ -130,6 +118,14 @@
 		return true;
 	}
 	
+	document.getElementById("charInput").onfocus = function(event) {
+		document.getElementById("keyData").innerHTML = "charInput Gained Focus";
+	}
+	
+	document.getElementById("charInput").onblur = function(event) {
+		document.getElementById("keyData").innerHTML = "charInput Lost Focus";
+	}
+	
 	</script>
 
 	<br /> Mouse X:
@@ -138,18 +134,18 @@
 	<input type="text" id="mouseY">
 	<br />
 	<script>
-		document.body.onmousemove = function(e) {
-			e = e || window.event;
+		document.body.onmousemove = function(event) {
+			event = event || window.event;
 
 			// pageX, pageY: mouse position relative to html doc
-			var pageX = e.pageX;
-			var pageY = e.pageY;
+			var pageX = event.pageX;
+			var pageY = event.pageY;
 			if (pageX === undefined) {
 				// clientX, clientY: mouse position relative to browser viewport
 				// scrollLeft, scrollTop: pixel an element is scrolled from left or top
-				pageX = e.clientX + document.body.scrollLeft
+				pageX = event.clientX + document.body.scrollLeft
 						+ document.documentElement.scrollLeft;
-				pageY = e.clientY + document.body.scrollTop
+				pageY = event.clientY + document.body.scrollTop
 						+ document.documentElement.scrollTop;
 			}
 			document.getElementById("mouseX").value = pageX;
@@ -167,17 +163,29 @@
 
 	// Make image invisible on click
 	document.getElementById('hideMe').onclick = function(event) {
-  document.getElementById('hideMe').className = "hidden";
-  document.getElementById('showHer').className = "show";
-}
+  		document.getElementById('hideMe').className = "hidden";
+  		document.getElementById('showHer').className = "show";
+	}
 
 	// Make image visible on click
 	document.getElementById('showHer').onclick = function(event) {
-  document.getElementById('hideMe').className = "show";
-  document.getElementById('showHer').className = "hidden";
-}
+  		document.getElementById('hideMe').className = "show";
+  		document.getElementById('showHer').className = "hidden";
+	}
 
-</script>
+	</script>
+
+	<button id="clearInputs">Clear Inputs</button>
+	<script>
+		document.getElementById("clearInputs").onclick = function(event) {
+			var inputElements = document.getElementsByTagName("input");
+			for (var index = 0; index < inputElements.length; index++) {
+				if (inputElements[index].type == "text") {
+					inputElements[index].value = "";
+				}
+			}
+		}
+	</script>
 
 
 
