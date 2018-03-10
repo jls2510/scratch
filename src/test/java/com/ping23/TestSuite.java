@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({ TestSuperStack.class, TestBigDecimalStringSort.class,
-    TestFileUtilities.class })
+    TestFileUtilities.class, PhysicsTest.class })
 public class TestSuite {
     // nothing
 }
