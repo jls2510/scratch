@@ -9,8 +9,8 @@ public class FindOdds
 
     public static void main(String[] args)
     {
-        int leftBound = -63;
-        int rightBound = 63;
+        int leftBound = 4;
+        int rightBound = 99;
         int[] result = findOdds(leftBound, rightBound);
         System.out.println("findOdds(" + leftBound + ", " + rightBound + ") = "
             + formatArray(result));
@@ -35,7 +35,7 @@ public class FindOdds
         return returnString;
     }
 
-    private static int[] findOdds(int l, int r)
+    public static int[] findOdds(int l, int r)
     {
         // edge cases
         if (l==r) {
