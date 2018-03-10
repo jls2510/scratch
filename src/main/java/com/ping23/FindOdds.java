@@ -10,7 +10,7 @@ public class FindOdds
     public static void main(String[] args)
     {
         int leftBound = -63;
-        int rightBound = -63;
+        int rightBound = 63;
         int[] result = findOdds(leftBound, rightBound);
         System.out.println("findOdds(" + leftBound + ", " + rightBound + ") = "
             + formatArray(result));
@@ -52,7 +52,7 @@ public class FindOdds
             return new int[0];
         }
         
-        int calcArrayLength = (int)Math.ceil((r - l) / 2.0);
+        int calcArrayLength = (int)Math.ceil((r - l + 1) / 2.0);
         
         int[] returnArray = new int[calcArrayLength];
 
