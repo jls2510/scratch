@@ -1,4 +1,4 @@
-package main.java.com.ping23;
+package com.ping23.ch_test;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -20,7 +20,7 @@ public class SuperStack {
 
         SuperStack superStack = new SuperStack();
 
-        String filename = "/main/java/com/ping23/input006.txt";
+        String filename = "/main/java/com/ping23/ch_test/input006.txt";
         URL url = SuperStack.class.getResource(filename);
         String absoluteFullPathFilename = url.getPath();
 

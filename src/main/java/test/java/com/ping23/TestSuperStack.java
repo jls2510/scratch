@@ -9,7 +9,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.java.com.ping23.SuperStack;
+import com.ping23.ch_test.SuperStack;
 
 public class TestSuperStack {
     
