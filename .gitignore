@@ -4,6 +4,9 @@
 .project
 .classpath
 
+# idea stuff
+.idea
+
 # other ide stuff
 .pydevproject
 
