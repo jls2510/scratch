@@ -1,4 +1,4 @@
-package com.win.mailer;
+package com.ping23;
 
 import java.io.IOException;
 import java.io.InputStream;

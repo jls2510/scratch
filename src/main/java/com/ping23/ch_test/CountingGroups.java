@@ -220,6 +220,7 @@ public class CountingGroups
         }
 
         bw.close();
+        in.close();
     }
 
     private static final String INPUT_1 = "10\r\n" + "10\r\n"

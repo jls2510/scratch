@@ -1,10 +1,10 @@
-package main.java.com.ping23;
+package com.ping23;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import main.java.com.ping23.util.FileUtilities;
+import com.ping23.util.FileUtilities;
 
 public class FindTaggedContentSolution
 {

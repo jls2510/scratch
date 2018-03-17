@@ -6,7 +6,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-import main.java.com.ping23.util.FileUtilities;
+import com.ping23.util.FileUtilities;
 
 public class FindTaggedContent
 {

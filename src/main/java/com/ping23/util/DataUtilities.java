@@ -1,4 +1,4 @@
-package main.java.com.ping23.util;
+package com.ping23.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

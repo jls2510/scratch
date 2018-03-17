@@ -1,4 +1,4 @@
-package main.java.com.ping23;
+package com.ping23;
 
 public class MatrixOps {
 
