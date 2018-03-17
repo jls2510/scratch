@@ -3,7 +3,7 @@ package test.java.com.ping23;
 import org.junit.Assert;
 import org.junit.Test;
 
-import main.java.com.ping23.BigDecimalStringSort;
+import com.ping23.hr_exercises.BigDecimalStringSort;
 
 public class TestBigDecimalStringSort {
 

@@ -1,4 +1,4 @@
-package main.java.com.ping23;
+package com.ping23.ch_test;
 
 import java.io.*;
 import java.util.*;

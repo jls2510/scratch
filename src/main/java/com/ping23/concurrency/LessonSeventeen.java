@@ -16,5 +16,8 @@ public class LessonSeventeen {
 
         new Thread(getMail).start();
         new Thread(getMailAgain).start();
+
+        System.out.println("Number of Threads: " + Thread.activeCount());
+
     }
 }

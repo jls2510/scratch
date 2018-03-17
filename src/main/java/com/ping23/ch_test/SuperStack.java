@@ -20,7 +20,7 @@ public class SuperStack {
 
         SuperStack superStack = new SuperStack();
 
-        String filename = "/main/java/com/ping23/ch_test/input006.txt";
+        String filename = "input006.txt";
         URL url = SuperStack.class.getResource(filename);
         String absoluteFullPathFilename = url.getPath();
 
@@ -28,6 +28,7 @@ public class SuperStack {
 
         File file = new File(absoluteFullPathFilename);
 
+        //Scanner fileScanner = new Scanner(file);
         Scanner fileScanner = new Scanner(file);
         String inputString = "";
         while (fileScanner.hasNextLine()) {
@@ -49,7 +50,6 @@ public class SuperStack {
 
     /**
      * get (read) the operations from the input data
-     * @param operations
      */
     public String[] getOperations(String inputSource) {
         
