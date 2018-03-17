@@ -1,4 +1,4 @@
-package main.java.com.ping23;
+package com.ping23.ch_test;
 
 import java.io.*;
 import java.util.*;
@@ -74,7 +74,9 @@ public class HostnamesAndTotalRequests
         // write a line to the file for each hostname / count pair
         for (String hostname : hostnames.keySet())
         {
-            writer.write(hostname + " " + hostnames.get(hostname));
+            String outLine = hostname + " " + hostnames.get(hostname);
+            System.out.println(outLine);
+            writer.write(outLine);
             writer.newLine();
         }
 

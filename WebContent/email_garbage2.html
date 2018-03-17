@@ -1,64 +1,865 @@
 <html>
-<head>
-    <style>
-        * {
-            font-family: Arial, serif;
-            font-size: 14px;
-            padding: 2px;
-            border-collapse: collapse;
-            color: #4e7085;
-        }
+    <head>
+        <style>
+            * {
+                font-family: Arial, serif;
+                font-size: 14px;
+                padding: 2px;
+                border-collapse: collapse;
+                color: #4e7085;
+            }
 
-        a {
-            color: #336699;
-        }
+            a {
+                color: #336699;
+            }
 
-        .payload {
+            .order-header {
+                text-align: center;
+                color: #505050;
+                line-height: 150%
+            }
 
-        }
+            .order-header-title {
+                color: #4E7085;
+                display: block;
+                font-weight: bold;
+                line-height: 100%;
+                margin: 0 0 10px;
+            }
 
+            .header {
+                text-align: center;
+                vertical-align: top;
+                font-weight: bold;
+                border: 1px solid #4E7085;
+            }
 
-        table tr td {
-            text-align: left;
-            vertical-align: top;
-            border: 1px dotted #EB6E1F;
-            padding: 10px 20px 10px 20px;
-        }
+            .shipment-header {
+                background-color: #eb6e1f;
+                color: #000000;
+            }
 
-    </style>
-</head>
-<body>
-<div>
-    <span>Message from Odyssey WIN Order System<br /></span>
-    <br />
-</div>
-<table>
-    <tbody>
-    <tr>
-        <td>Status Message</td>
-        <td>READY_TO_PRINT_API has executed an action with an unusual time</td>
-    </tr>
-    <tr>
-        <td>Message Tag</td>
-        <td>Action Execution Time</td>
-    </tr>
-    <tr>
-        <td>Message Source</td>
-        <td>Diagnostic</td>
-    </tr>
-    <tr>
-        <td>Message Queue ID</td>
-        <td>799</td>
-    </tr>
-    <tr>
-        <td>Message Created</td>
-        <td>2018-02-09T10:17:41.341-05:00</td>
-    </tr>
-    </tbody>
-</table>
-<div class="payload">
-    <span>Message Payload:<br /></span>
-    <span>Test 799</span>
-</div>
+            .table-header {
+                background-color: #bee5c9;
+            }
+
+            .row {
+                text-align: left;
+                vertical-align: top;
+                border: 1px dotted #EB6E1F;
+            }
+
+            .row-header {
+                background-color: #fffdce;
+                font-weight: bold;
+                border-left: 1px solid #4E7085;
+            }
+
+            .row-info {
+                border-right: 1px solid #4E7085;
+            }
+
+            .line-info {
+                font-weight: bold;
+                border: 1px solid #4E7085;
+            }
+
+            .line-span {
+                background-color: #bee5c9; color: #4e7085;
+            }
+
+            .bol-data-border {
+                border: 1px solid #4E7085;
+            }
+
+            .bol-header {
+                background-color: #fffdce;
+                border-top-style: none;
+                border-right: 1px dotted #EB6E1F;
+                border-bottom: 1px dotted #EB6E1F;
+            }
+
+            .bol-first-header {
+                border-left-style: none;
+            }
+
+            .bol-inner-header {
+                border-left: 1px dotted #EB6E1F;
+            }
+
+            .bol-last-header {
+                border-right-style: none;
+                border-left: 1px dotted #EB6E1F;
+            }
+
+            .bol-info {
+                border-top: 1px dotted #EB6E1F;
+                border-right: 1px dotted #EB6E1F;
+                border-bottom-style: none;
+            }
+            .bol-first-info {
+                border-left-style: none;
+            }
+
+            .bol-inner-info {
+                border-left: 1px dotted #EB6E1F;
+            }
+
+            .bol-last-info {
+                border-right-style: none;
+                border-left: 1px dotted #EB6E1F;
+            }
+        </style>
+    </head>
+    <body>
+    <div style="width: 50%; margin: 0 auto;"">
+        <div class="order-header">
+            <h4 class="order-header-title">
+                Tender Accepted Notification to Wanho Mfg Orders#:
+                <span style="white-space: nowrap">S-18-0007163, S-18-0007165, S-18-0007167</span>
+            </h4>
+        </div>
+    <table border="0" width="100%" cellspacing="0" cellpadding="20">
+        <tbody>
+        <tr>
+            <td style="padding: 0 20px 0 20px;">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td class="header shipment-header" colspan="4" nowrap="nowrap">Details For Shipment#: S-18-0007163</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="2" nowrap="nowrap" width="50%">Ship From Site</td>
+                            <td class="header table-header" colspan="2" nowrap="nowrap" width="50%">Ship To Site</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Site Name</td>
+                            <td class="row row-info">WAO - Wanho Manufacturing</td>
+                            <td class="row row-header" nowrap="nowrap">Site Name</td>
+                            <td class="row row-info">Maryland</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Postal Code</td>
+                            <td class="row row-info" nowrap="nowrap">06705</td>
+                            <td class="row row-header" nowrap="nowrap">Postal Code</td>
+                            <td class="row row-info" nowrap="nowrap">21031</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Address</td>
+                            <td class="row row-info" nowrap="nowrap">137 Mattatuck Heights</td>
+                            <td class="row row-header" nowrap="nowrap">Address</td>
+                            <td class="row row-info" nowrap="nowrap">11126 McCormick Road</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">City</td>
+                            <td class="row row-info" nowrap="nowrap">WATERBURY</td>
+                            <td class="row row-header" nowrap="nowrap">City</td>
+                            <td class="row row-info" nowrap="nowrap">HUNT VALLEY</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Region</td>
+                            <td class="row row-info" nowrap="nowrap">CT</td>
+                            <td class="row row-header" nowrap="nowrap">Region</td>
+                            <td class="row row-info" nowrap="nowrap">MD</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Country</td>
+                            <td class="row row-info" nowrap="nowrap">US</td>
+                            <td class="row row-header" nowrap="nowrap">Country</td>
+                            <td class="row row-info" nowrap="nowrap">US</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Contact Name</td>
+                            <td class="row row-info" nowrap="nowrap">Dave Murphy</td>
+                            <td class="row row-header" nowrap="nowrap">Contact Name</td>
+                            <td class="row row-info" nowrap="nowrap">Richard Malanga</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="">dave.murphy@wanho.com</a></td>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="">Malanga@tessco.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">203-759-3744</td>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1653</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">203-759-3744</td>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1050</td>
+                        </tr>
+
+                        <tr>
+                            <td class="header table-header" colspan="2" nowrap="nowrap">General</td>
+                            <td class="header table-header" colspan="2" nowrap="nowrap">Requested Schedule</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Mode</td>
+                            <td class="row row-info" nowrap="nowrap">Ground</td>
+                            <td class="row row-header" nowrap="nowrap">Earliest Pickup</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Equipment</td>
+                            <td class="row row-info" nowrap="nowrap">CTX</td>
+                            <td class="row row-header" nowrap="nowrap">Latest Pickup</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Ship Direction</td>
+                            <td class="row row-info" nowrap="nowrap">Outbound</td>
+                            <td class="row row-header" nowrap="nowrap">Earliest Delivery</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Payment Terms</td>
+                            <td class="row row-info" nowrap="nowrap">Collect</td>
+                            <td class="row row-header" nowrap="nowrap">Latest Delivery</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="2">Contact</td>
+                            <td class="header table-header" colspan="2">Total</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Name</td>
+                            <td class="row row-info" nowrap="nowrap">Rick Malanga</td>
+                            <td class="row row-header" nowrap="nowrap">Gross Weight</td>
+                            <td class="row row-info" nowrap="nowrap">1418.565</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="Malanga@tessco.com">Malanga@tessco.com</a></td>
+                            <td class="row row-header" nowrap="nowrap">Volume</td>
+                            <td class="row row-info" nowrap="nowrap">74.8750000000383</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1653</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1050</td>
+                            <td class="row row-header" nowrap="nowrap">&nbsp;</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="4">Products</td>
+                        </tr>
+                        <tr>
+                            <td class="row line-info" colspan="4"><span class="line-span">Line # 1</span></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">SKU/Prod. #</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                            <td class="row row-header" nowrap="nowrap">NMFC #</td>
+                            <td class="row row-info" nowrap="nowrap">123.45</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Description</td>
+                            <td class="row row-info" nowrap="nowrap">Pallet - Metal Hardware Kits 370lbs</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Product Class</td>
+                            <td class="row row-info" nowrap="nowrap">70</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Code</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Weight</td>
+                            <td class="row row-info" nowrap="nowrap">476.315</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Description</td>
+                            <td class="row row-info">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Volume</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Class</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Package Count</td>
+                            <td class="row row-info" nowrap="nowrap">7</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Packing Group</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Handling Unit</td>
+                            <td class="row row-info" nowrap="nowrap">1</td>
+                            <td class="row row-header" nowrap="nowrap">Sizes (L x W x H)</td>
+                            <td class="row row-info" nowrap="nowrap">36 x 42 x 47</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Stackable</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                            <td class="row row-header" nowrap="nowrap">Volume Per HU</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="4">Products</td>
+                        </tr>
+                        <tr>
+                            <td class="row line-info" colspan="4"><span class="line-span">Line # 2</span></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">SKU/Prod. #</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                            <td class="row row-header" nowrap="nowrap">NMFC #</td>
+                            <td class="row row-info" nowrap="nowrap">123.45</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Description</td>
+                            <td class="row row-info" nowrap="nowrap">Pallet - Metal Hardware Kits 900 lbs</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Product Class</td>
+                            <td class="row row-info" nowrap="nowrap">70</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Code</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Weight</td>
+                            <td class="row row-info" nowrap="nowrap">942.25</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Description</td>
+                            <td class="row row-info">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Volume</td>
+                            <td class="row row-info" nowrap="nowrap">33.7500000000173</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Class</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Package Count</td>
+                            <td class="row row-info" nowrap="nowrap">3</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Packing Group</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Handling Unit</td>
+                            <td class="row row-info" nowrap="nowrap">1</td>
+                            <td class="row row-header" nowrap="nowrap">Sizes (L x W x H)</td>
+                            <td class="row row-info" nowrap="nowrap">45 x 36 x 36</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Stackable</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                            <td class="row row-header" nowrap="nowrap">Volume Per HU</td>
+                            <td class="row row-info" nowrap="nowrap">33.7500000000173</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="20">
+        <tbody>
+        <tr>
+            <td style="padding: 0 20px 0 20px;">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td class="header shipment-header" colspan="4" nowrap="nowrap">Details For Shipment#: S-18-0007165</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="2" nowrap="nowrap" width="50%">Ship From Site</td>
+                            <td class="header table-header" colspan="2" nowrap="nowrap" width="50%">Ship To Site</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Site Name</td>
+                            <td class="row row-info">WAO - Wanho Manufacturing</td>
+                            <td class="row row-header" nowrap="nowrap">Site Name</td>
+                            <td class="row row-info">Nevada</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Postal Code</td>
+                            <td class="row row-info" nowrap="nowrap">06705</td>
+                            <td class="row row-header" nowrap="nowrap">Postal Code</td>
+                            <td class="row row-info" nowrap="nowrap">89502</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Address</td>
+                            <td class="row row-info" nowrap="nowrap">137 Mattatuck Heights</td>
+                            <td class="row row-header" nowrap="nowrap">Address</td>
+                            <td class="row row-info" nowrap="nowrap">4775 Aircenter Circle</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">City</td>
+                            <td class="row row-info" nowrap="nowrap">WATERBURY</td>
+                            <td class="row row-header" nowrap="nowrap">City</td>
+                            <td class="row row-info" nowrap="nowrap">RENO</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Region</td>
+                            <td class="row row-info" nowrap="nowrap">CT</td>
+                            <td class="row row-header" nowrap="nowrap">Region</td>
+                            <td class="row row-info" nowrap="nowrap">NV</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Country</td>
+                            <td class="row row-info" nowrap="nowrap">US</td>
+                            <td class="row row-header" nowrap="nowrap">Country</td>
+                            <td class="row row-info" nowrap="nowrap">US</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Contact Name</td>
+                            <td class="row row-info" nowrap="nowrap">Dave Murphy</td>
+                            <td class="row row-header" nowrap="nowrap">Contact Name</td>
+                            <td class="row row-info" nowrap="nowrap">Richard Malanga</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="">dave.murphy@wanho.com</a></td>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="">Malanga@tessco.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">203-759-3744</td>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1653</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">203-759-3744</td>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1050</td>
+                        </tr>
+
+                        <tr>
+                            <td class="header table-header" colspan="2" nowrap="nowrap">General</td>
+                            <td class="header table-header" colspan="2" nowrap="nowrap">Requested Schedule</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Mode</td>
+                            <td class="row row-info" nowrap="nowrap">Ground</td>
+                            <td class="row row-header" nowrap="nowrap">Earliest Pickup</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Equipment</td>
+                            <td class="row row-info" nowrap="nowrap">CTX</td>
+                            <td class="row row-header" nowrap="nowrap">Latest Pickup</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Ship Direction</td>
+                            <td class="row row-info" nowrap="nowrap">Outbound</td>
+                            <td class="row row-header" nowrap="nowrap">Earliest Delivery</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Payment Terms</td>
+                            <td class="row row-info" nowrap="nowrap">Collect</td>
+                            <td class="row row-header" nowrap="nowrap">Latest Delivery</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="2">Contact</td>
+                            <td class="header table-header" colspan="2">Total</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Name</td>
+                            <td class="row row-info" nowrap="nowrap">Rick Malanga</td>
+                            <td class="row row-header" nowrap="nowrap">Gross Weight</td>
+                            <td class="row row-info" nowrap="nowrap">689.92</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="Malanga@tessco.com">Malanga@tessco.com</a></td>
+                            <td class="row row-header" nowrap="nowrap">Volume</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1653</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1050</td>
+                            <td class="row row-header" nowrap="nowrap">&nbsp;</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="4">Products</td>
+                        </tr>
+                        <tr>
+                            <td class="row line-info" colspan="4"><span class="line-span">Line # 1</span></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">SKU/Prod. #</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                            <td class="row row-header" nowrap="nowrap">NMFC #</td>
+                            <td class="row row-info" nowrap="nowrap">123.45</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Description</td>
+                            <td class="row row-info" nowrap="nowrap">Pallet - Metal Hardware Kits 370lbs</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Product Class</td>
+                            <td class="row row-info" nowrap="nowrap">70</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Code</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Weight</td>
+                            <td class="row row-info" nowrap="nowrap">689.92</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Description</td>
+                            <td class="row row-info">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Volume</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Class</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Package Count</td>
+                            <td class="row row-info" nowrap="nowrap">3</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Packing Group</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Handling Unit</td>
+                            <td class="row row-info" nowrap="nowrap">1</td>
+                            <td class="row row-header" nowrap="nowrap">Sizes (L x W x H)</td>
+                            <td class="row row-info" nowrap="nowrap">36 x 42 x 47</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Stackable</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                            <td class="row row-header" nowrap="nowrap">Volume Per HU</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="0" width="100%" cellspacing="0" cellpadding="20">
+        <tbody>
+        <tr>
+            <td style="padding: 0 20px 0 20px;">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td class="header shipment-header" colspan="4" nowrap="nowrap">Details For Shipment#: S-18-0007167</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="2" nowrap="nowrap" width="50%">Ship From Site</td>
+                            <td class="header table-header" colspan="2" nowrap="nowrap" width="50%">Ship To Site</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Site Name</td>
+                            <td class="row row-info">WAO - Wanho Manufacturing</td>
+                            <td class="row row-header" nowrap="nowrap">Site Name</td>
+                            <td class="row row-info">Maryland</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Postal Code</td>
+                            <td class="row row-info" nowrap="nowrap">06705</td>
+                            <td class="row row-header" nowrap="nowrap">Postal Code</td>
+                            <td class="row row-info" nowrap="nowrap">21031</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Address</td>
+                            <td class="row row-info" nowrap="nowrap">137 Mattatuck Heights</td>
+                            <td class="row row-header" nowrap="nowrap">Address</td>
+                            <td class="row row-info" nowrap="nowrap">11126 McCormick Road</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">City</td>
+                            <td class="row row-info" nowrap="nowrap">WATERBURY</td>
+                            <td class="row row-header" nowrap="nowrap">City</td>
+                            <td class="row row-info" nowrap="nowrap">HUNT VALLEY</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Region</td>
+                            <td class="row row-info" nowrap="nowrap">CT</td>
+                            <td class="row row-header" nowrap="nowrap">Region</td>
+                            <td class="row row-info" nowrap="nowrap">MD</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Country</td>
+                            <td class="row row-info" nowrap="nowrap">US</td>
+                            <td class="row row-header" nowrap="nowrap">Country</td>
+                            <td class="row row-info" nowrap="nowrap">US</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Contact Name</td>
+                            <td class="row row-info" nowrap="nowrap">Dave Murphy</td>
+                            <td class="row row-header" nowrap="nowrap">Contact Name</td>
+                            <td class="row row-info" nowrap="nowrap">Richard Malanga</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="">dave.murphy@wanho.com</a></td>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="">Malanga@tessco.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">203-759-3744</td>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1653</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">203-759-3744</td>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1050</td>
+                        </tr>
+
+                        <tr>
+                            <td class="header table-header" colspan="2" nowrap="nowrap">General</td>
+                            <td class="header table-header" colspan="2" nowrap="nowrap">Requested Schedule</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Mode</td>
+                            <td class="row row-info" nowrap="nowrap">Ground</td>
+                            <td class="row row-header" nowrap="nowrap">Earliest Pickup</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Equipment</td>
+                            <td class="row row-info" nowrap="nowrap">CTX</td>
+                            <td class="row row-header" nowrap="nowrap">Latest Pickup</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Ship Direction</td>
+                            <td class="row row-info" nowrap="nowrap">Outbound</td>
+                            <td class="row row-header" nowrap="nowrap">Earliest Delivery</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Payment Terms</td>
+                            <td class="row row-info" nowrap="nowrap">Collect</td>
+                            <td class="row row-header" nowrap="nowrap">Latest Delivery</td>
+                            <td class="row row-info" nowrap="nowrap">2018-01-24</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="2">Contact</td>
+                            <td class="header table-header" colspan="2">Total</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Name</td>
+                            <td class="row row-info" nowrap="nowrap">Rick Malanga</td>
+                            <td class="row row-header" nowrap="nowrap">Gross Weight</td>
+                            <td class="row row-info" nowrap="nowrap">3113.614</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Email</td>
+                            <td class="row row-info" nowrap="nowrap">
+                            <a href="Malanga@tessco.com">Malanga@tessco.com</a></td>
+                            <td class="row row-header" nowrap="nowrap">Volume</td>
+                            <td class="row row-info" nowrap="nowrap">123.375000000063</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Phone</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1653</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Fax</td>
+                            <td class="row row-info" nowrap="nowrap">410-229-1050</td>
+                            <td class="row row-header" nowrap="nowrap">&nbsp;</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="4">Products</td>
+                        </tr>
+                        <tr>
+                            <td class="row line-info" colspan="4"><span class="line-span">Line # 1</span></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">SKU/Prod. #</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                            <td class="row row-header" nowrap="nowrap">NMFC #</td>
+                            <td class="row row-info" nowrap="nowrap">123.45</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Description</td>
+                            <td class="row row-info" nowrap="nowrap">Pallet - Metal Hardware Kits 385 lbs</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Product Class</td>
+                            <td class="row row-info" nowrap="nowrap">70</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Code</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Weight</td>
+                            <td class="row row-info" nowrap="nowrap">1</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Description</td>
+                            <td class="row row-info">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Volume</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Class</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Package Count</td>
+                            <td class="row row-info" nowrap="nowrap">2</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Packing Group</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Handling Unit</td>
+                            <td class="row row-info" nowrap="nowrap">1</td>
+                            <td class="row row-header" nowrap="nowrap">Sizes (L x W x H)</td>
+                            <td class="row row-info" nowrap="nowrap">36 x 42 x 47</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Stackable</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                            <td class="row row-header" nowrap="nowrap">Volume Per HU</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="4">Products</td>
+                        </tr>
+                        <tr>
+                            <td class="row line-info" colspan="4"><span class="line-span">Line # 2</span></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">SKU/Prod. #</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                            <td class="row row-header" nowrap="nowrap">NMFC #</td>
+                            <td class="row row-info" nowrap="nowrap">123.45</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Description</td>
+                            <td class="row row-info" nowrap="nowrap">Pallet - Metal Hardware Kits 385 lbs</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Product Class</td>
+                            <td class="row row-info" nowrap="nowrap">70</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Code</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Weight</td>
+                            <td class="row row-info" nowrap="nowrap">1473.918</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Description</td>
+                            <td class="row row-info">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Volume</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Class</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Package Count</td>
+                            <td class="row row-info" nowrap="nowrap">9</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Packing Group</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Handling Unit</td>
+                            <td class="row row-info" nowrap="nowrap">1</td>
+                            <td class="row row-header" nowrap="nowrap">Sizes (L x W x H)</td>
+                            <td class="row row-info" nowrap="nowrap">36 x 42 x 47</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Stackable</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                            <td class="row row-header" nowrap="nowrap">Volume Per HU</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                        </tr>
+                        <tr>
+                            <td class="header table-header" colspan="4">Products</td>
+                        </tr>
+                        <tr>
+                            <td class="row line-info" colspan="4"><span class="line-span">Line # 3</span></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">SKU/Prod. #</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                            <td class="row row-header" nowrap="nowrap">NMFC #</td>
+                            <td class="row row-info" nowrap="nowrap">123.45</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Description</td>
+                            <td class="row row-info" nowrap="nowrap">Pallet - Metal Hardware Kits 385 lbs</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Product Class</td>
+                            <td class="row row-info" nowrap="nowrap">70</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Code</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Weight</td>
+                            <td class="row row-info" nowrap="nowrap">1638.696</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Description</td>
+                            <td class="row row-info">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Total Line Volume</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Class</td>
+                            <td class="row row-info" nowrap="nowrap"></td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Package Count</td>
+                            <td class="row row-info" nowrap="nowrap">2</td>
+                            <td class="row row-header" nowrap="nowrap">Hazmat Packing Group</td>
+                            <td class="row row-info" nowrap="nowrap">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Handling Unit</td>
+                            <td class="row row-info" nowrap="nowrap">1</td>
+                            <td class="row row-header" nowrap="nowrap">Sizes (L x W x H)</td>
+                            <td class="row row-info" nowrap="nowrap">36 x 42 x 47</td>
+                        </tr>
+                        <tr>
+                            <td class="row row-header" nowrap="nowrap">Stackable</td>
+                            <td class="row row-info" nowrap="nowrap">N</td>
+                            <td class="row row-header" nowrap="nowrap">Volume Per HU</td>
+                            <td class="row row-info" nowrap="nowrap">41.1250000000211</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
 </body>
 </html>

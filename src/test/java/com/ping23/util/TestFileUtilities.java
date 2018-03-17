@@ -1,4 +1,4 @@
-package test.java.com.ping23.util;
+package com.ping23.util;
 
 import java.io.File;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 import org.junit.runner.notification.Failure;
 import org.junit.runners.JUnit4;
 
-import main.java.com.ping23.util.FileUtilities;
+import com.ping23.util.FileUtilities;
 
 @RunWith(JUnit4.class)
 public class TestFileUtilities

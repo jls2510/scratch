@@ -1,4 +1,4 @@
-package main.java.com.ping23;
+package com.ping23;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import main.java.com.ping23.util.FileUtilities;
+import com.ping23.util.FileUtilities;
 
 public class FileWritingPractice {
 
