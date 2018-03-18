@@ -1,11 +1,11 @@
-package test.java.com.ping23;
+package com.ping23;
 
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import main.java.com.ping23.Physics;
+import com.ping23.Physics;
 
 public class PhysicsTest {
 
