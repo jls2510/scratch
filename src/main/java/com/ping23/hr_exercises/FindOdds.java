@@ -35,7 +35,7 @@ public class FindOdds
         return returnString;
     }
 
-    private static int[] findOdds(int l, int r)
+    static int[] findOdds(int l, int r)
     {
         // edge cases
         if (l==r) {
