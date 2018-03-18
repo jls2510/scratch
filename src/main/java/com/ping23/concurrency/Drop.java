@@ -42,7 +42,7 @@ public class Drop {
                 System.out.println("Drop.put() starting wait");
                 wait();
             } catch (InterruptedException e) {
-                System.out.println("Drop.put() wait interrupted");
+                System.out.println("Drop.put() wait interrupted"); // this never happens
             }
         }
         // Toggle status.

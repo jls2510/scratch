@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64ed6359-205d-43cb-a048-3dc52260e3f1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Safelock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/hellostuff.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/hellostuff.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/BinarySearchExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/BinarySearchExercise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/BubbleSortDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/BubbleSortDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/FileWritingPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/FileWritingPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/FindTaggedContentSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/FindTaggedContentSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/HashMeSHA256.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/HashMeSHA256.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/MatrixOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/MatrixOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/Scratch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/Scratch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/SysadminEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/SysadminEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/ch_test/CountingGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/ch_test/CountingGroups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/hr_exercises/FindTaggedContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/hr_exercises/FindTaggedContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/util/DataUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/util/DataUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/util/FileUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/util/FileUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/java/com/ping23/TestBigDecimalStringSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ping23/TestBigDecimalStringSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/java/com/ping23/TestSuite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ping23/TestSuite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/java/com/ping23/TestSuperStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ping23/TestSuperStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/java/com/ping23/input006.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ping23/input006.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/java/com/ping23/util/TestFileUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ping23/util/TestFileUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/java/com/ping23/util/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ping23/util/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Deadlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Deadlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Producer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,47 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Drop.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java">
+      <file leaf-file-name="LessonEighteen.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/LessonEighteen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClockTicker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/ClockTicker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Producer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Producer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProducerConsumerExample.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/ProducerConsumerExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Consumer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Consumer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="459">
+              <caret line="27" selection-start-line="25" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -92,6 +39,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -115,12 +67,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/LessonEighteen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/LessonSeventeen.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/SimpleThreads.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Deadlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Producer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/ProducerConsumerExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/ClockTicker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Producer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Safelock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Deadlock.java" />
       </list>
     </option>
   </component>
@@ -153,8 +106,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1396" />
-    <option name="y" value="11" />
+    <option name="x" value="-41" />
+    <option name="y" value="15" />
     <option name="width" value="1364" />
     <option name="height" value="726" />
   </component>
@@ -166,15 +119,47 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="scratch" type="b2602c69:ProjectViewProjectNode" />
               <item name="scratch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scratch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scratch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scratch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scratch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ping23" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="scratch" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ping23" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrency" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="scratch" type="b2602c69:ProjectViewProjectNode" />
@@ -191,6 +176,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,6 +187,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="D:/dev/javalibs/junit" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -226,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ProducerConsumerExample">
+  <component name="RunManager" selected="Application.Deadlock">
     <configuration name="Deadlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ping23.concurrency.Deadlock" />
       <module name="scratch" />
@@ -240,6 +229,17 @@
     </configuration>
     <configuration name="ProducerConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ping23.concurrency.ProducerConsumerExample" />
+      <module name="scratch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ping23.concurrency.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Safelock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ping23.concurrency.Safelock" />
       <module name="scratch" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -305,11 +305,13 @@
       <item itemvalue="Application.SimpleThreads" />
       <item itemvalue="Application.Deadlock" />
       <item itemvalue="Application.ProducerConsumerExample" />
+      <item itemvalue="Application.Safelock" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProducerConsumerExample" />
         <item itemvalue="Application.Deadlock" />
+        <item itemvalue="Application.Safelock" />
+        <item itemvalue="Application.ProducerConsumerExample" />
         <item itemvalue="Application.SimpleThreads" />
       </list>
     </recent_temporary>
@@ -329,6 +331,7 @@
       <workItem from="1521161408027" duration="255000" />
       <workItem from="1521162117024" duration="18677000" />
       <workItem from="1521312114821" duration="96000" />
+      <workItem from="1521313510063" duration="3971000" />
     </task>
     <task id="LOCAL-00001" summary="Concurrency Study; Moved some stuff around.">
       <created>1521302422220</created>
@@ -341,10 +344,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21945000" />
+    <option name="totallyTimeSpent" value="25916000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -355,24 +358,24 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.32980332" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.22483222" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45078298" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33892617" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21332519" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26701966" />
+      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32997763" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39932886" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +388,50 @@
     <MESSAGE value="Concurrency Study; Moved some stuff around." />
     <option name="LAST_COMMIT_MESSAGE" value="Concurrency Study; Moved some stuff around." />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java</url>
+          <line>34</line>
+          <properties class="com.ping23.concurrency.Drop" method="put">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/ClockTicker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/ProducerConsumerExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -435,13 +481,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/util/TestFileUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/util/TestFileUtilities.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/LessonSeventeen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -477,27 +517,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/util/TestFileUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/TestBigDecimalStringSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/TestBigDecimalStringSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/util/TestFileUtilities.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/TestBigDecimalStringSort.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/TestBigDecimalStringSort.java" />
     <entry file="file://$PROJECT_DIR$/scratch.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -530,13 +552,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/util/TestFileUtilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/java/com/ping23/util/TestFileUtilities.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/ch_test/HostnamesAndTotalRequests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -642,13 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/LessonEighteen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="27" selection-start-line="25" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/GetSystemTime.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -684,31 +693,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Deadlock.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="221">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/ProducerConsumerExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Producer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -719,10 +721,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/ProducerConsumerExample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Drop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="707">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Deadlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/Safelock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping23/concurrency/LessonEighteen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="25" selection-end-line="27" />
         </state>
       </provider>
     </entry>

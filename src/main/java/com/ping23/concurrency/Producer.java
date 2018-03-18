@@ -27,7 +27,7 @@ public class Producer implements Runnable {
                 System.out.println("Producer going to sleep...");
                 Thread.sleep(random.nextInt(5000));
             } catch (InterruptedException e) {
-                System.out.println("Producer sleep interrupted");
+                System.out.println("Producer sleep interrupted"); // this never happens
 
             }
         }
