@@ -8,6 +8,6 @@
 .pydevproject
 
 # build artifacts
-[Bb]uild
-[Bb]in
-[Tt]arget
+[Bb]uild/**
+[Bb]in/**
+[Tt]arget/**
