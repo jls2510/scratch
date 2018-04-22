@@ -9,7 +9,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.ping23.ch_test.SuperStack;
+import com.ping23.commercehub_test.SuperStack;
 
 public class TestSuperStack {
     

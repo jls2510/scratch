@@ -1,4 +1,4 @@
-package com.ping23.ch_test;
+package com.ping23.commercehub_test;
 
 import java.io.File;
 import java.io.FileNotFoundException;

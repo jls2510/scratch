@@ -1,6 +1,6 @@
 package com.ping23;
 
-import com.ping23.ch_test.SuperStack;
+import com.ping23.commercehub_test.SuperStack;
 
 import java.io.File;
 import java.io.IOException;
