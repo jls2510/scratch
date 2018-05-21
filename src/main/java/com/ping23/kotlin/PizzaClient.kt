@@ -1,10 +1,10 @@
 package com.ping23.kotlin
 
+
 class PizzaClient {
 
     companion object {
 
-        @JvmStatic
         fun main(args: Array<String>) {
             val myPizza: Pizza = Pizza(6, listOf(Toppings.Pepperoni, Toppings.Cheese, Toppings.Mushroom))
 

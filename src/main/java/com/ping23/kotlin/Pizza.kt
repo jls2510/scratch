@@ -12,7 +12,7 @@ class Pizza(val number: Int, val toppings: List<Toppings>) {
         pizzaMaker = PizzaMaker.Companion.getInstance(heat = 400, size = 4)
     }
 
-    fun makePizza() : String? {
+    fun makePizza(): String? {
         return pizzaMaker?.makePizza(number = number, toppings = toppings)
     }
 
@@ -32,6 +32,7 @@ private class PizzaMaker private constructor(val heat: Int, val size: Int?) {
         fun getInstance(heat: Int, size: Int?): PizzaMaker {
             return PizzaMaker(heat, size)
         }
+
     }
 
     fun makePizza(number: Int, toppings: List<Toppings>): String {
