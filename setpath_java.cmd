@@ -1,4 +1,4 @@
 
 rem add jdk bin to path
 
-path = %path%;c:\Program Files\Java\jdk-9.0.4\bin
+path = %path%;C:\Program Files\Java\jdk1.8.0_162
