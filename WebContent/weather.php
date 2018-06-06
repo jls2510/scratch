@@ -13,19 +13,19 @@
 
     <script>
 
-        var zipCode = 10011;
+        var weatherZipCode = 10011;
 
         //v3.1.0
         //Docs at http://simpleweatherjs.com
         $(document).ready(function () {
             displayWeather(); //Get the initial weather.
             //setInterval(getWeather, 600000); //Update the weather every 10 minutes.
-            setInterval(function () {zipCode += 312;  displayWeather(); }, 10000);
+            //setInterval(function () {weatherZipCode += 312;  displayWeather(); }, 10000);
         });
 
-        function displayWeather() {
+        function displayWeatherX() {
             $.simpleWeather({
-                location: zipCode,
+                location: weatherZipCode,
                 unit: 'f',
                 success: function (weather) {
                     html = '<h2><i class="icon-' + weather.code + '"></i>' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
@@ -66,10 +66,52 @@
 
         function setZipCode(enteredZipCode) {
             //alert(enteredZipCode);
-            zipCode = enteredZipCode;
+            weatherZipCode = enteredZipCode;
             displayWeather();
-            //$("#showZipCode").html(zipCode);
+            //$("#showZipCode").html(weatherZipCode);
         }
+
+
+        // display the weather widget via simpleWeather > yahoo weather api
+        function displayWeather() {
+
+            // do a little checking on the zip code
+            console.log('weatherZipCode (raw) = ' + weatherZipCode);
+            weatherZipCode = weatherZipCode.toString().substring(0,5);
+            console.log('weatherZipCode (after) = ' + weatherZipCode);
+            var isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(weatherZipCode);
+            if (! isValidZip) {
+                $("#weatherWidget").html('');
+                return;
+            }
+
+            $.simpleWeather({
+                location: weatherZipCode,
+                unit: 'f',
+                success: function (weather) {
+
+                    var html = "";
+                    html += '<span style="background-color: white;border: 1px solid lightgrey;padding: 5px;border-radius: 5px;">';
+                    //html += '<span style="float: right; margin-right: 5px;background-color: white;border: 1px solid lightgrey;padding: 10px; display: inline-block;border-radius: 5px;">';
+                    html += '<span style="color: blue;">Current Weather: </span>';
+                    //html += '<span>';
+                    html += weather.city + ', ' + weather.region + ': ';
+                    html += weather.temp + '&deg;' + weather.units.temp + '&nbsp;';
+                    html += '<span class="currently">' + weather.currently + '</span>';
+                    //html += weather.alt.temp + '&deg;C';
+                    html += '</span>';
+                    //html += '</span>';
+
+                    html += '<a href="https://www.yahoo.com/?ilc=401" target="_blank">' +
+                        ' <img src="https://poweredby.yahoo.com/purple.png" width="100" height="22"/> </a>';
+
+                    $("#weatherWidget").html(html);
+                },
+                error: function (error) {
+                    $("#weatherWidget").html('');
+                }
+            });
+        } // end displayWeather()
 
 
     </script>
@@ -77,8 +119,8 @@
 </head>
 <body>
 <div id="weather">
-		<span id="weatherDisplay">
-		</span>
+		<div id="weatherWidget">
+		</div>
     <input id="hiddenZipCode" type="hidden"/>
     <span id="showZipCode"></span>
 </div>
