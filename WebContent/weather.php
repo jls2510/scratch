@@ -13,24 +13,28 @@
 
     <script>
 
+        var zipCode = 10011;
+
         //v3.1.0
         //Docs at http://simpleweatherjs.com
         $(document).ready(function () {
-            getWeather(); //Get the initial weather.
+            displayWeather(); //Get the initial weather.
             //setInterval(getWeather, 600000); //Update the weather every 10 minutes.
+            setInterval(function () {zipCode += 312;  displayWeather(); }, 10000);
         });
 
-        var zipCode = 12572;
-
-        function getWeather() {
+        function displayWeather() {
             $.simpleWeather({
                 location: zipCode,
                 unit: 'f',
                 success: function (weather) {
                     html = '<h2><i class="icon-' + weather.code + '"></i>' + weather.temp + '&deg;' + weather.units.temp + '</h2>';
-                    html += '<ul><li>' + weather.city + ', ' + weather.region + '</li>';
-                    html += '<li class="currently">' + weather.currently + '</li>';
+                    html += '<ul>';
+                    html += '<li>' + weather.city + ', ' + weather.region + '</li>';
+                    html += '<li>' + weather.currently + '</li>';
                     html += '<li>' + weather.alt.temp + '&deg;C</li></ul>';
+                    html += '<li>' + weather.wind.direction + ' ' + weather.wind.speed + ' ' + weather.units.speed + '</li>';
+                    html += '</ul>';
 
                     $("#weatherDisplay").html(html);
                 },
@@ -63,7 +67,7 @@
         function setZipCode(enteredZipCode) {
             //alert(enteredZipCode);
             zipCode = enteredZipCode;
-            getWeather();
+            displayWeather();
             //$("#showZipCode").html(zipCode);
         }
 
