@@ -79,7 +79,7 @@
             console.log('weatherZipCode (raw) = ' + weatherZipCode);
             weatherZipCode = weatherZipCode.toString().substring(0,5);
             console.log('weatherZipCode (after) = ' + weatherZipCode);
-            var isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(weatherZipCode);
+            var isValidZip = /^\d{5}$/.test(weatherZipCode);
             if (! isValidZip) {
                 $("#weatherWidget").html('');
                 return;
