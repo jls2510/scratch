@@ -102,8 +102,8 @@
                     html += '</span>';
                     //html += '</span>';
 
-                    html += '<a href="https://www.yahoo.com/?ilc=401" target="_blank">' +
-                        ' <img src="https://poweredby.yahoo.com/purple.png" width="100" height="22"/> </a>';
+                    html += '<a href="https://www.yahoo.com/?ilc=401" target="_blank" >' +
+                        ' <img src="https://poweredby.yahoo.com/purple.png" width="100" height="22" onerror="this.style.display=\'none\'"/> </a>';
 
                     $("#weatherWidget").html(html);
                 },
