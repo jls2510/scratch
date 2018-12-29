@@ -14,3 +14,5 @@
 [Bb]uild/**
 [Bb]in/**
 [Tt]arget/**
+/bin/
+/target/
